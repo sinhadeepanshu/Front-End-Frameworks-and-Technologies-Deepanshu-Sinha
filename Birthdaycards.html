@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Birthday Card</title>
+    <style>
+        body {
+            background-color: blue;
+            font-family: Arial;
+            text-align: center;
+        }
+        div {
+            border: 1px solid black;
+            width: 400px;
+            margin: 60px auto;
+            padding: 25px;
+            border-radius: 20px;
+            background-color: white;
+            box-shadow: 4px 6px 10px grey;
+            animation: card 1s ease;
+            transition: 0.5s;
+        }
+         div:hover {
+            transform: scale(1.03);
+            box-shadow: 6px 8px 15px grey;
+        }
+        h1 {
+            color: blue;
+            animation: heading 2s ease alternate infinite;
+        }  
+        img {
+            width: 180px;
+            height: 180px;
+            object-fit: contain;
+            border-radius: 50%;
+            border: 4px solid blue;
+            margin: auto;
+        }
+        h2 {
+            color:black;
+        }
+        p {
+            font-size: 17px;
+            color: rgb(69, 68, 68);
+            line-height: 1.6;
+        }
+        .bio {
+            border: none;
+            width: auto;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: yellowgreen;
+            box-shadow: none;
+            animation: none;
+        }
+        .bio:hover {
+            transform: none;
+            
+        }
+        .bio h3 {
+            color: blue;
+            font-size: 22px;
+        }
+        @keyframes card {
+            from {
+                transform: scale(0);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        @keyframes heading {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="./raj.png">
+        <h1>Happy Birthday</h1>
+        <p>
+            Today is My Birthday.
+        </p>
+        <section class="bio">
+            <h3>About Me</h3>
+             <p>
+                Hello! I am Deepanshu Sinha.
+                I am a passionate to Explore New Things.
+            </p>
+            <p>
+                DOB : 09 August 2003
+            </p>
+        </section>
+    </div>
+</body>
+</html>       
